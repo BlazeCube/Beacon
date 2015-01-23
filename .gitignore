@@ -27,4 +27,18 @@ dependency-reduced-pom.xml
 *.iml
 .idea/
 
+# Eclipse stuff
+.classpath
+.project
+.settings/
+
+# netbeans
+nbproject/
+nbactions.xml
+
+# intellij
+*.iml
+*.ipr
+*.iws
+.idea/
 
