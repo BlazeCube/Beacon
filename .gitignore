@@ -21,11 +21,7 @@ pom.xml.releaseBackup
 pom.xml.versionsBackup
 pom.xml.next
 release.properties
-
-###Beacon
 dependency-reduced-pom.xml
-*.iml
-.idea/
 
 # Eclipse stuff
 .classpath
