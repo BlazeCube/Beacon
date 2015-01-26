@@ -38,3 +38,5 @@ nbactions.xml
 *.iws
 .idea/
 
+# OSX
+.DS_Store
