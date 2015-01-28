@@ -1,4 +1,4 @@
-/**	
+/**
  * Beacon - Open Source Minecraft Server
  * Copyright (C) 2014  Jan Delius
  * Copyright (C) 2014  Blazecube
@@ -43,6 +43,6 @@ public class ErrorStreamConsole extends ErrorStream{
     @Override
     protected void abstractHandle(String title, String message) {
         this.logger.log(Level.ERROR, title);
-        this.logger.log(Level.ERROR, String.format("%5s", "")+message);
+        this.logger.log(Level.ERROR, String.format("%5s%s", "", message));
     }
 }
