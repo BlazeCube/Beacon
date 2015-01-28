@@ -1,4 +1,4 @@
-/**	
+/**
  * Beacon - Open Source Minecraft Server
  * Copyright (C) 2014  Jan Delius
  * Copyright (C) 2014  Blazecube
@@ -30,18 +30,18 @@ public abstract class InfoStream {
 
     private static ArrayList<InfoStream> streams = Lists.newArrayList();
 
-    public static void register(InfoStream errorStream){
-        if(!streams.contains(errorStream))
-            streams.add(errorStream);
+    public static void register(InfoStream infoStream){
+        if(!streams.contains(infoStream))
+            streams.add(infoStream);
     }
 
-    public static void unregister(InfoStream errorStream){
-        streams.remove(errorStream);
+    public static void unregister(InfoStream infoStream){
+        streams.remove(infoStream);
     }
 
     public static void handle(String message){
-        for(InfoStream errorStream: Lists.newArrayList(streams))
-            errorStream.abstractHandle(message);
+        for(InfoStream infoStream: Lists.newArrayList(streams))
+        infoStream.abstractHandle(message);
     }
 
     protected abstract void abstractHandle(String message);
